@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <img
+          src="https://res.cloudinary.com/dvam5qzfi/image/upload/v1724154062/HTML_CSS_Assignment/sj9q3wnlkrpap1gwzuuc.png"
+          alt="logo"
+          class="logo"
+        />
+        <ul class="tabs-container">
+          <li class="tab"><a href="#">Home</a></li>
+          <li class="tab"><a href="#">Order</a></li>
+          <li class="tab"><a href="#">Food</a></li>
+          <li class="tab"><a href="#">Restaurant</a></li>
+          <li class="tab"><a href="#">Testimonial</a></li>
+          <li class="tab"><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="icons-container">
+          <div class="img-container">
+            <img
+              class="icon"
+              src="https://res.cloudinary.com/dvam5qzfi/image/upload/v1724160898/whatsapp_bhruif.png"
+              alt="whatsapp"
+            />
+          </div>
+          <div class="img-container">
+            <img
+              class="icon"
+              src="https://res.cloudinary.com/dvam5qzfi/image/upload/v1724160898/facebook_vvb7yq.png"
+              alt="facebook"
+              style="height: 18px; width: 20px"
+            />
+          </div>
+        </div>
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <ul class="nav-links mobile">
+        <li class="tab"><a href="#">Home</a></li>
+        <li class="tab"><a href="#">Order</a></li>
+        <li class="tab"><a href="#">Food</a></li>
+        <li class="tab"><a href="#">Restaurant</a></li>
+        <li class="tab"><a href="#">Testimonial</a></li>
+        <li class="tab"><a href="#">Contact Us</a></li>
+      </ul>
+      <div class="banner-container">
+        <div class="banner-header">Lorem Ipsum</div>
+      </div>
+      <section class="content">
+        <div class="content-item">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
+        <div class="content-item sm-none md-block">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
+        <div class="content-item sm-none">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s.
+          </p>
+        </div>
+      </section>
+      <section class="services">
+        <h2>Lorem Ipsum</h2>
+        <div class="services-wrapper">
+          <div class="service-item si-l">
+            <img
+              src="https://res.cloudinary.com/dvam5qzfi/image/upload/v1724154064/HTML_CSS_Assignment/x7zyuob7rfahhd8bujdv.jpg"
+              alt="Rooms"
+            />
+            <h3>ROOMS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button>Learn More</button>
+          </div>
+          <div class="service-item si-m">
+            <img
+              src="https://res.cloudinary.com/dvam5qzfi/image/upload/v1724154062/HTML_CSS_Assignment/opiqqaqj4hk0iq1ghv6x.jpg"
+              alt="Dining"
+            />
+            <h3>DINING</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button>Learn More</button>
+          </div>
+          <div class="service-item si-r">
+            <img
+              src="https://res.cloudinary.com/dvam5qzfi/image/upload/v1724154062/HTML_CSS_Assignment/zmq3zdfqc9ofxy4kqhqy.jpg"
+              alt="Pool"
+            />
+            <h3>POOLS</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      // JavaScript for hamburger menu toggle
+      const hamburger = document.querySelector(".hamburger");
+      const mobileNavLinks = document.querySelector(".nav-links.mobile");
+
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("open");
+        mobileNavLinks.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>
